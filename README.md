@@ -1,2 +1,2 @@
 # diving-into-the-wreck
-Python application separating subliminal and overt attitudes within text posts of the Reddit manosphere.
+Python application separating subliminal attitudes from overt ones within text posts of the Reddit manosphere.
