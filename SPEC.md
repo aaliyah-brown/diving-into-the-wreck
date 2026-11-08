@@ -7,7 +7,7 @@ A cleaned dataset and about three visualizations.
 `reddit.ndjson` 
 
 ## Output
-`redditclean.ndjson`: all original columns, plus `sentiment` `agency`.
+`redditclean.ndjson`: all original columns, plus `sentiment` and `agency`.
 
 ## Rules
 
@@ -17,11 +17,14 @@ The added column, `sentiment`, specifies whether content in `text_post` carries 
 - `subliminal`: overlooked, indirect, or normalized remarks, jokes, stereotypes
 - `overt`: blatant, explicit, or offensive remarks, threats, generalizations
 - `unremarkable`: unclear sentiment within post
-Observations marked as `unremarkable` are dropped.
 
 The added column, `agency`, denotes whether `subreddit` value matches either `subliminal` or `overt` hostility.
 - `subliminal`: captures the `subreddit` values of `incels`, `mgtow`, `love_shy`, `rooshv`, and `avfm`
 - `overt`: captures `red_pill_talk`, `pua_forum`, and `the_attraction`
+
+Missing values
+- Duplicate values of `id_post` dropped
+- `NaN` and `unremarkable` values of `sentiment` dropped
 
 ## Acceptance criteria
 
