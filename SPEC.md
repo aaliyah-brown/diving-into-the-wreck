@@ -1,7 +1,7 @@
 # Spec: reddit.py
 
 ## Goal and user
-A cleaned dataset and about three visualizations.
+A cleaned dataset and comparison displays to better contextualize the Reddit manosphere.
 
 ## Input
 `reddit.ndjson` 
