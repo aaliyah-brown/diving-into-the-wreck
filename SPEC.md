@@ -46,7 +46,7 @@ To build `sentiment` column:
 - No duplicates of `id_post` column.
 
 2. Batch Processing
-- Primary data-reading packages are `json`, `pandas `, `DuckDB`, and `[scikit-learn]([url](https://scikit-learn.org/stable/auto_examples/semi_supervised/plot_semi_supervised_newsgroups.html))`.
+- Primary data-reading packages are `json`, `pandas `, `DuckDB`, and `[scikit-learn]([(https://scikit-learn.org/stable/auto_examples/semi_supervised/plot_semi_supervised_newsgroups.html)])`.
 - Data initially processed in batches of 1000 observations.
 - Each batch thereafter tested at sizes 5,000, 10,000, 25,000, and 50,000.
 - Processing time and peak memory usage recorded for each batch.
