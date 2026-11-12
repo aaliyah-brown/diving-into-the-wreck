@@ -22,13 +22,14 @@ The added column, `agency`, denotes whether `subreddit` value matches either `su
 - `subliminal`: captures the `subreddit` values of `incels`, `mgtow`, `love_shy`, `rooshv`, and `avfm`
 - `overt`: captures `red_pill_talk`, `pua_forum`, and `the_attraction`
 
-2. Classification process
+2. Classification process \\
 To build `sentiment` column:
-  1. Extract missing and irrelevant observations of `text_post`.
+  1. Drop missing and irrelevant observations of `text_post`.
   2. Build lexicon dictionary of words and phrases with corresponding attitude.
-  3. Identify textual patterns in data set. 
+  3. Identify textual patterns in data set.
+  4. Examine accuracy of text classifier and adjust parameters accordingly.
   
-4. Missing values
+5. Missing values
 - Duplicate values of `id_post` dropped
 - `NaN` and `unremarkable` values of `sentiment` dropped
 
@@ -41,7 +42,7 @@ To build `sentiment` column:
 - No duplicates of `id_post` column.
 
 2. Batch Processing
-- Primary data-reading packages are `json`, `pandas `, `DuckDB`, and `scikit-learn`.
+- Primary data-reading packages are `json`, `pandas `, `DuckDB`, and `[scikit-learn]([url](https://scikit-learn.org/stable/auto_examples/semi_supervised/plot_semi_supervised_newsgroups.html))`.
 - Data initially processed in batches of 1000 observations.
 - Each batch thereafter tested at sizes 5,000, 10,000, 25,000, and 50,000.
 - Processing time and peak memory usage recorded for each batch.
