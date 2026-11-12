@@ -24,8 +24,9 @@ The added column, `agency`, denotes whether `subreddit` value matches either `su
 
 2. Classification process
 To build `sentiment` column:
-  1. Build lexicon of words and phrases with corresponding attitude.
-  2. Match data to custom lexicon
+  1. Extract missing and irrelevant observations of `text_post`.
+  2. Build lexicon dictionary of words and phrases with corresponding attitude.
+  3. Identify textual patterns in data set. 
   
 4. Missing values
 - Duplicate values of `id_post` dropped
