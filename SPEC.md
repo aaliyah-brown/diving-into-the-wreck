@@ -1,13 +1,14 @@
 # Spec: reddit.py
 
 ## Goal and user
-A cleaned dataset and comparison displays to better contextualize the Reddit manosphere.
+The program examines forum posts within the Reddit manosphere. Each post will be classified into an agency level depending on the subcommunity in which it lives. Then, each post will be labeled as subliminally harmful or overtly threatening. The main focus is to accurately perform sentiment analysis by identifying keywords and key phrases that signal uniquely unequivocal connotations. 
 
 ## Input
 `reddit.ndjson` 
 
 ## Output
 `redditclean.ndjson`: all original columns, plus `sentiment` and `agency`.
+A cleaned dataset and comparison displays to better contextualize the Reddit manosphere.
 
 ## Rules
 1. Sentiment categorization
@@ -57,6 +58,9 @@ To build `sentiment` column:
 All 12.79 GB of data may not exceed available system memory. 
 
 ## Out of scope
-Data will not include information beyond `reddit.ndjson`. Program will not perform more than categorization and analysis of data.
+- Using information only within `reddit.ndjson.`
+- Cleaning Reddit data for usability and clarity. 
+- Examining only content within  `text_posts` for sentiment analysis.
+- Comparing aggregate findings on sentiment between subcommunities.
 
 ## Open questions
