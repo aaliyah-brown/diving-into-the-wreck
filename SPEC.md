@@ -57,6 +57,12 @@ To build `sentiment` column:
 ## Performance budget
 All 12.79 GB of data may not exceed available system memory. 
 
+## In scope
+- Using information only within `reddit.ndjson.`
+- Cleaning Reddit data for usability and clarity. 
+- Examining only content within  `text_posts` for sentiment analysis.
+- Comparing aggregate findings on sentiment between subcommunities.
+
 ## Out of scope
 - Using information only within `reddit.ndjson.`
 - Cleaning Reddit data for usability and clarity. 
