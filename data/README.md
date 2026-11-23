@@ -26,5 +26,6 @@ A thread is a themed conversation where Reddit community members discuss relevan
 | resume_author | author biography | string | null |
 | text_post | main text in post | string | I just thought I'd share this. It sure made me laugh: http:\/\/freebeacon.com\/blog\/hillary-clinton-sting\/  |
 | thread | url for discussion | string | https:\/\/d2ec906f9aea-003845.vbulletin.net\/forum\/avfm-central\/the-avfm-lounge\/17452-prominent-grandmother |
-| sentiment | subliminal or overt display of hostility in text_post | string | |
-| agency | level of initiative that subcommunity tends to exhibit | string | |
+| sentiment | level of hostility used in text_post (subliminal, overt, undetermined, NaN)| string | |
+| agency | level of initiative that subcommunity tends to exhibit (high, low) | string | |
+| subgroup | subgroup of manosphere (avfm, incels, love_shy, mgtow, pua_forum, red_pill_talk, rooshv, the_attraction) | string | |
