@@ -38,7 +38,7 @@ To build `sentiment` column:
 - Duplicate values of `id_post` dropped
 - `NaN` and `unremarkable` values of `sentiment` dropped
 
-##Requirements
+## Requirements
 Functional requirements:
 - FR-01: Read in `reddit.ndjson` and verify presence of the fields `text_post`, `author`, and `subreddit`.
 - FR 02: Prepare data by deriving new variables and removing duplicate, missing, or ambiguous text content.
