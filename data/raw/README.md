@@ -1,12 +1,15 @@
-##Data
+## Data
 
 `reddit.ndjson` contains thousands of Reddit posts within anti-feminist forums capturing fifty-six subreddit communities and spanning from 2005 to 2018. 
 It contains twelve key-value pairs. 
 
 The data lives on [Zenodo](https://zenodo.org/records/4007913).
 
+A forum is a general discussion platform.
+A Subreddit is community on Reddit that is united by a particular interest, hobby, ideology, or other cultural identity. Each Subreddit is moderated and subject to unique rules.
+A thread is a themed conversation where Reddit community members discuss relevant ideas, reply to other comments, and upvote or downvote comments.
 
-##Dictionary
+## Dictionary
 | Key | Description | Type | Example |
 |---|---|---|---|
 | author | usernamae | String | artlone |
@@ -22,8 +25,5 @@ The data lives on [Zenodo](https://zenodo.org/records/4007913).
 | text_post | main text in post | string | I just thought I'd share this. It sure made me laugh: http:\/\/freebeacon.com\/blog\/hillary-clinton-sting\/  |
 | thread | url for discussion | string | https:\/\/d2ec906f9aea-003845.vbulletin.net\/forum\/avfm-central\/the-avfm-lounge\/17452-prominent-grandmother |
 
-A forum is a general discussion platform.
-A Subreddit is community on Reddit that is united by a particular interest, hobby, ideology, or other cultural identity. Each Subreddit is moderated and subject to unique rules.
-A thread is a themed conversation where Reddit community members discuss relevant ideas, reply to other comments, and upvote or downvote comments. . 
 
 
