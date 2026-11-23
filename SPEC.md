@@ -39,12 +39,12 @@ To build `sentiment` column:
 - `NaN` and `unremarkable` values of `sentiment` dropped
 
 ##Requirements
-#Functional requirements:
+Functional requirements:
 - FR-01: Read in `reddit.ndjson` and verify presence of the fields `text_post`, `author`, and `subreddit`.
 - FR 02: Prepare data by deriving new variables and removing duplicate, missing, or ambiguous text content.
 - FR-03: Peruse lexicon within each value of `text_post`, match lexicon to corresponding sentiment class, and display results. 
 
-#Non-functional requirements:
+Non-functional requirements:
 - NFR-01: Read in `reddit.ndjson` within ten minutes and return an error message for ingestion failure.
 - NFR-02: Preserve each value of `text_post` so that raw data is unchanged throughout data analysis.
 - NFR-03: Honor anonymity of each identifier of `user_id` and `author` and conceal user information from analysis.
