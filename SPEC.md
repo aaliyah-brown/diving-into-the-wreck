@@ -38,35 +38,29 @@ To build `sentiment` column:
 - Duplicate values of `id_post` dropped
 - `NaN` and `unremarkable` values of `sentiment` dropped
 
-## Acceptance criteria
-1. Testable Criteria
-- Data processed in row increments without fully loading into RAM.
-- All 12.79 GB of original data in `reddit.ndjson` read in as NDJSON file without error.
-- All changes to data appended to `redditclean.ndjson` and original dataset left unchanged.
-- Each observation within `redditclean.ndjson` has valid value for `sentiment`, `agency`, `subreddit`, and `text_post`.
-- No duplicates of `id_post` column.
+##Requirements
+#Functional requirements:
+- FR-01: Read in `reddit.ndjson` and verify presence of the fields `text_post`, `author`, and `subreddit`.
+- FR 02: Prepare data by deriving new variables and removing duplicate, missing, or ambiguous text content.
+- FR-03: Peruse lexicon within each value of `text_post`, match lexicon to corresponding sentiment class, and display results. 
 
-2. Batch Processing
-- Primary data-reading packages include `json`, `pandas`, `DuckDB`, and [`scikit-learn`](https://scikit-learn.org/stable/auto_examples/semi_supervised/plot_semi_supervised_newsgroups.html).
-- Data initially processed in batches of 1000 observations.
-- Each batch thereafter tested at sizes 5,000, 10,000, 25,000, and 50,000.
-- Processing time and peak memory usage recorded for each batch.
-- Final batch size determined based on all recorded values of memory usage.
-- Optimal batch size occurs where memory usage allows for consistent and quick processing speed.
+#Non-functional requirements:
+- NFR-01: Read in `reddit.ndjson` within ten minutes and return an error message for ingestion failure.
+- NFR-02: Preserve each value of `text_post` so that raw data is unchanged throughout data analysis.
+- NFR-03: Honor anonymity of each identifier of `user_id` and `author` and conceal user information from analysis.
    
 ## Performance budget
 All 12.79 GB of data may not exceed available system memory. 
 
 ## In scope
-- Using information only within `reddit.ndjson.`
-- Cleaning Reddit data for usability and clarity. 
-- Examining only content within  `text_posts` for sentiment analysis.
-- Comparing aggregate findings on sentiment between subcommunities.
+- Information only within `reddit.ndjson`.
+- Cleaned Reddit data for usability and clarity. 
+- Sentiment analysis only for`text_posts`.
+- Comparison of aggregate, not individual user, findings.
 
 ## Out of scope
-- Using information only within `reddit.ndjson.`
-- Cleaning Reddit data for usability and clarity. 
-- Examining only content within  `text_posts` for sentiment analysis.
-- Comparing aggregate findings on sentiment between subcommunities.
-
-## Open questions
+- Finding correlation of Reddit usage to real-world violence. 
+- Proving causation between Reddit activity and real-world violence. 
+- Determining motives, characteristics, or true identities of individual users. 
+- Tracking live updates or edits made to existing text posts. 
+- Comparing individual Reddit users against other individuals.
