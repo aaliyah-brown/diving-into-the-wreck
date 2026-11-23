@@ -11,6 +11,8 @@ A subreddit is community on Reddit that is united by a particular interest, hobb
 
 A thread is a themed conversation where Reddit community members discuss relevant ideas, reply to other comments, and upvote or downvote comments.
 
+The properties of `sentiment`, `agency`, and `subgroup` are derived from the initial 12 key-value pairs.
+
 ## Dictionary
 | Key | Description | Type | Example |
 |---|---|---|---|
