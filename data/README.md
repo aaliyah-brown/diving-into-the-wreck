@@ -14,7 +14,7 @@ A thread is a themed conversation where Reddit community members discuss relevan
 ## Dictionary
 | Key | Description | Type | Example |
 |---|---|---|---|
-| author | usernamae | String | artlone |
+| author | usernamae | string | artlone |
 | crawled_at | date and time of extrapolation | date/time | 2019-06-24 16:07:18.594158 |
 | date_post | date and time of post | date/time | Temporal analysis |
 | id_post | Unique post identifier | String/Integer | 2015-11-20 20:49:46 |
@@ -26,6 +26,5 @@ A thread is a themed conversation where Reddit community members discuss relevan
 | resume_author | author biography | string | null |
 | text_post | main text in post | string | I just thought I'd share this. It sure made me laugh: http:\/\/freebeacon.com\/blog\/hillary-clinton-sting\/  |
 | thread | url for discussion | string | https:\/\/d2ec906f9aea-003845.vbulletin.net\/forum\/avfm-central\/the-avfm-lounge\/17452-prominent-grandmother |
-
-
-
+| sentiment | subliminal or overt display of hostility in text_post | string | |
+| agency | level of initiative that subcommunity tends to exhibit | string | |
