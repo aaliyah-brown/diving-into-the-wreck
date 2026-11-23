@@ -6,7 +6,9 @@ It contains twelve key-value pairs.
 The data lives on [Zenodo](https://zenodo.org/records/4007913).
 
 A forum is a general discussion platform.
-A Subreddit is community on Reddit that is united by a particular interest, hobby, ideology, or other cultural identity. Each Subreddit is moderated and subject to unique rules.
+
+A subreddit is community on Reddit that is united by a particular interest, hobby, ideology, or other cultural identity. Each subreddit is moderated and subject to unique rules.
+
 A thread is a themed conversation where Reddit community members discuss relevant ideas, reply to other comments, and upvote or downvote comments.
 
 ## Dictionary
