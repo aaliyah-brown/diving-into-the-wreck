@@ -8,7 +8,7 @@ The program examines forum posts within the Reddit manosphere. Each post will be
 
 2. Distinguish semantic patterns and attitudes (explicit vs. indirect violence) within subgroups.
 
-3. Compare toxicity between high-agency subgroups (PUA’s, red pill) and passive subgroups (MGTOW’s, incels)
+3. Compare toxicity between high-agency subgroups (PUA’s, red pill) and passive subgroups (MGTOW’s, incels).
 
 ## Input
 `reddit.ndjson` 
