@@ -52,8 +52,8 @@ To build `sentiment` column:
 - NFR-02: Preserve each value of `text_post` so that raw data is unchanged throughout data analysis.
 - NFR-03: Honor anonymity of each identifier of `user_id` and `author` and conceal user information from analysis.
    
-## Performance budget
-All 12.79 GB of data may not exceed available system memory. 
+## Performance budget 
+Program must handle 25 MB to 12 GB of data without exceeding available system memory.
 
 ## In scope
 - Information only within `reddit.ndjson`.
