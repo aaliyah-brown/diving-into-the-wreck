@@ -4,9 +4,11 @@
 The program examines forum posts within the Reddit manosphere. Each post will be classified into an agency level depending on the subcommunity in which it lives. Then, each post will be labeled as subliminally harmful or overtly threatening. The main focus is to accurately perform sentiment analysis by identifying keywords and key phrases that signal uniquely unequivocal connotations. 
 
 ### Analytical goals
-Quantify the level of lingual toxicity by creating quantitative metrics (post length, vocabulary count)
-Distinguish semantic patterns and attitudes (explicit vs. indirect violence) within subgroups
-Compare toxicity between high-agency subgroups (PUA’s, red pill) and passive subgroups (MGTOW’s, incels)
+1. Quantify the level of lingual toxicity by creating quantitative metrics (post length, vocabulary count).
+
+2. Distinguish semantic patterns and attitudes (explicit vs. indirect violence) within subgroups.
+
+3. Compare toxicity between high-agency subgroups (PUA’s, red pill) and passive subgroups (MGTOW’s, incels)
 
 ## Input
 `reddit.ndjson` 
